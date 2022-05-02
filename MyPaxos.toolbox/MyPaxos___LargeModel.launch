@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.lamport.tla.toolbox.tool.tlc.modelCheck">
+    <stringAttribute key="configurationName" value="LargeModel"/>
+    <stringAttribute key="modelBehaviorSpec" value="Spec"/>
+    <intAttribute key="modelBehaviorSpecType" value="1"/>
+    <listAttribute key="modelParameterConstants">
+        <listEntry value="QUORUM;;;0;0"/>
+        <listEntry value="NULLVOTE;;;0;0"/>
+        <listEntry value="ACCEPTORS;;;0;0"/>
+        <listEntry value="DECREES;;;0;0"/>
+    </listAttribute>
+    <stringAttribute key="specName" value="MyPaxos"/>
+</launchConfiguration>

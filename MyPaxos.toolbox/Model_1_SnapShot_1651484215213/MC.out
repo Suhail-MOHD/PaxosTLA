@@ -1,0 +1,822 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 23 and seed -8667657703240470507 with 8 workers on 16 cores with 1214MB heap and 2730MB offheap memory [pid: 67234] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /Users/suhailmuhammed/Codestash/Examples/specifications/PaxosHowToWinATuringAward/MyPaxos.toolbox/Model_1/MC.tla
+Parsing file /Users/suhailmuhammed/Codestash/Examples/specifications/PaxosHowToWinATuringAward/MyPaxos.toolbox/Model_1/MyPaxos.tla
+Parsing file /private/var/folders/ky/w59jhxtj5h9415_8tb8yygcm0000gn/T/AppTranslocation/E07EBBDA-8734-46CF-9C11-442C6509D159/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /private/var/folders/ky/w59jhxtj5h9415_8tb8yygcm0000gn/T/AppTranslocation/E07EBBDA-8734-46CF-9C11-442C6509D159/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Integers.tla
+Parsing file /private/var/folders/ky/w59jhxtj5h9415_8tb8yygcm0000gn/T/AppTranslocation/E07EBBDA-8734-46CF-9C11-442C6509D159/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Parsing file /private/var/folders/ky/w59jhxtj5h9415_8tb8yygcm0000gn/T/AppTranslocation/E07EBBDA-8734-46CF-9C11-442C6509D159/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /private/var/folders/ky/w59jhxtj5h9415_8tb8yygcm0000gn/T/AppTranslocation/E07EBBDA-8734-46CF-9C11-442C6509D159/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module MyPaxos
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2022-05-02 04:36:39)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2022-05-02 04:36:45.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(11) at 2022-05-02 04:36:48: 190,186 states generated (190,186 s/min), 37,190 distinct states found (37,190 ds/min), 22,362 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2110:1 @!@!@
+Invariant Inv is violated.
+@!@!@ENDMSG 2110 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ acceptorMsg = {}
+/\ remainingBallots = 1
+/\ leaderMsg = {}
+/\ prevVote = ( a1 :> [bal |-> -1, dec |-> -1] @@
+  a2 :> [bal |-> -1, dec |-> -1] @@
+  a3 :> [bal |-> -1, dec |-> -1] @@
+  a4 :> [bal |-> -1, dec |-> -1] @@
+  a5 :> [bal |-> -1, dec |-> -1] @@
+  a6 :> [bal |-> -1, dec |-> -1] )
+/\ nextBal = (a1 :> -1 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <NextBallot line 69, col 18 to line 70, col 77 of module MyPaxos>
+/\ acceptorMsg = {[bal |-> 1, type |-> "NextBallot"]}
+/\ remainingBallots = 1
+/\ leaderMsg = {}
+/\ prevVote = ( a1 :> [bal |-> -1, dec |-> -1] @@
+  a2 :> [bal |-> -1, dec |-> -1] @@
+  a3 :> [bal |-> -1, dec |-> -1] @@
+  a4 :> [bal |-> -1, dec |-> -1] @@
+  a5 :> [bal |-> -1, dec |-> -1] @@
+  a6 :> [bal |-> -1, dec |-> -1] )
+/\ nextBal = (a1 :> -1 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <NextBallot line 69, col 18 to line 70, col 77 of module MyPaxos>
+/\ acceptorMsg = {[bal |-> 1, type |-> "NextBallot"], [bal |-> 2, type |-> "NextBallot"]}
+/\ remainingBallots = 1
+/\ leaderMsg = {}
+/\ prevVote = ( a1 :> [bal |-> -1, dec |-> -1] @@
+  a2 :> [bal |-> -1, dec |-> -1] @@
+  a3 :> [bal |-> -1, dec |-> -1] @@
+  a4 :> [bal |-> -1, dec |-> -1] @@
+  a5 :> [bal |-> -1, dec |-> -1] @@
+  a6 :> [bal |-> -1, dec |-> -1] )
+/\ nextBal = (a1 :> -1 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <MaxVote line 72, col 15 to line 77, col 70 of module MyPaxos>
+/\ acceptorMsg = {[bal |-> 1, type |-> "NextBallot"], [bal |-> 2, type |-> "NextBallot"]}
+/\ remainingBallots = 1
+/\ leaderMsg = { [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a1,
+    lastVote |-> [bal |-> -1, dec |-> -1] ] }
+/\ prevVote = ( a1 :> [bal |-> -1, dec |-> -1] @@
+  a2 :> [bal |-> -1, dec |-> -1] @@
+  a3 :> [bal |-> -1, dec |-> -1] @@
+  a4 :> [bal |-> -1, dec |-> -1] @@
+  a5 :> [bal |-> -1, dec |-> -1] @@
+  a6 :> [bal |-> -1, dec |-> -1] )
+/\ nextBal = (a1 :> 1 @@ a2 :> -1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <MaxVote line 72, col 15 to line 77, col 70 of module MyPaxos>
+/\ acceptorMsg = {[bal |-> 1, type |-> "NextBallot"], [bal |-> 2, type |-> "NextBallot"]}
+/\ remainingBallots = 1
+/\ leaderMsg = { [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a1,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a2,
+    lastVote |-> [bal |-> -1, dec |-> -1] ] }
+/\ prevVote = ( a1 :> [bal |-> -1, dec |-> -1] @@
+  a2 :> [bal |-> -1, dec |-> -1] @@
+  a3 :> [bal |-> -1, dec |-> -1] @@
+  a4 :> [bal |-> -1, dec |-> -1] @@
+  a5 :> [bal |-> -1, dec |-> -1] @@
+  a6 :> [bal |-> -1, dec |-> -1] )
+/\ nextBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <BeginBallot line 82, col 21 to line 93, col 83 of module MyPaxos>
+/\ acceptorMsg = { [bal |-> 1, type |-> "NextBallot"],
+  [bal |-> 2, type |-> "NextBallot"],
+  [bal |-> 1, dec |-> d1, type |-> "BeginBallot"] }
+/\ remainingBallots = 1
+/\ leaderMsg = { [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a1,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a2,
+    lastVote |-> [bal |-> -1, dec |-> -1] ] }
+/\ prevVote = ( a1 :> [bal |-> -1, dec |-> -1] @@
+  a2 :> [bal |-> -1, dec |-> -1] @@
+  a3 :> [bal |-> -1, dec |-> -1] @@
+  a4 :> [bal |-> -1, dec |-> -1] @@
+  a5 :> [bal |-> -1, dec |-> -1] @@
+  a6 :> [bal |-> -1, dec |-> -1] )
+/\ nextBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <Voted line 95, col 13 to line 100, col 67 of module MyPaxos>
+/\ acceptorMsg = { [bal |-> 1, type |-> "NextBallot"],
+  [bal |-> 2, type |-> "NextBallot"],
+  [bal |-> 1, dec |-> d1, type |-> "BeginBallot"] }
+/\ remainingBallots = 1
+/\ leaderMsg = { [bal |-> 1, type |-> "Voted", acc |-> a1, vote |-> [bal |-> 1, dec |-> d1]],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a1,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a2,
+    lastVote |-> [bal |-> -1, dec |-> -1] ] }
+/\ prevVote = ( a1 :> [bal |-> 1, dec |-> d1] @@
+  a2 :> [bal |-> -1, dec |-> -1] @@
+  a3 :> [bal |-> -1, dec |-> -1] @@
+  a4 :> [bal |-> -1, dec |-> -1] @@
+  a5 :> [bal |-> -1, dec |-> -1] @@
+  a6 :> [bal |-> -1, dec |-> -1] )
+/\ nextBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <Voted line 95, col 13 to line 100, col 67 of module MyPaxos>
+/\ acceptorMsg = { [bal |-> 1, type |-> "NextBallot"],
+  [bal |-> 2, type |-> "NextBallot"],
+  [bal |-> 1, dec |-> d1, type |-> "BeginBallot"] }
+/\ remainingBallots = 1
+/\ leaderMsg = { [bal |-> 1, type |-> "Voted", acc |-> a1, vote |-> [bal |-> 1, dec |-> d1]],
+  [bal |-> 1, type |-> "Voted", acc |-> a2, vote |-> [bal |-> 1, dec |-> d1]],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a1,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a2,
+    lastVote |-> [bal |-> -1, dec |-> -1] ] }
+/\ prevVote = ( a1 :> [bal |-> 1, dec |-> d1] @@
+  a2 :> [bal |-> 1, dec |-> d1] @@
+  a3 :> [bal |-> -1, dec |-> -1] @@
+  a4 :> [bal |-> -1, dec |-> -1] @@
+  a5 :> [bal |-> -1, dec |-> -1] @@
+  a6 :> [bal |-> -1, dec |-> -1] )
+/\ nextBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> -1 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <MaxVote line 72, col 15 to line 77, col 70 of module MyPaxos>
+/\ acceptorMsg = { [bal |-> 1, type |-> "NextBallot"],
+  [bal |-> 2, type |-> "NextBallot"],
+  [bal |-> 1, dec |-> d1, type |-> "BeginBallot"] }
+/\ remainingBallots = 1
+/\ leaderMsg = { [bal |-> 1, type |-> "Voted", acc |-> a1, vote |-> [bal |-> 1, dec |-> d1]],
+  [bal |-> 1, type |-> "Voted", acc |-> a2, vote |-> [bal |-> 1, dec |-> d1]],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a1,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a2,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 2,
+    type |-> "LastVote",
+    acc |-> a3,
+    lastVote |-> [bal |-> -1, dec |-> -1] ] }
+/\ prevVote = ( a1 :> [bal |-> 1, dec |-> d1] @@
+  a2 :> [bal |-> 1, dec |-> d1] @@
+  a3 :> [bal |-> -1, dec |-> -1] @@
+  a4 :> [bal |-> -1, dec |-> -1] @@
+  a5 :> [bal |-> -1, dec |-> -1] @@
+  a6 :> [bal |-> -1, dec |-> -1] )
+/\ nextBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 2 @@ a4 :> -1 @@ a5 :> -1 @@ a6 :> -1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <MaxVote line 72, col 15 to line 77, col 70 of module MyPaxos>
+/\ acceptorMsg = { [bal |-> 1, type |-> "NextBallot"],
+  [bal |-> 2, type |-> "NextBallot"],
+  [bal |-> 1, dec |-> d1, type |-> "BeginBallot"] }
+/\ remainingBallots = 1
+/\ leaderMsg = { [bal |-> 1, type |-> "Voted", acc |-> a1, vote |-> [bal |-> 1, dec |-> d1]],
+  [bal |-> 1, type |-> "Voted", acc |-> a2, vote |-> [bal |-> 1, dec |-> d1]],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a1,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a2,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 2,
+    type |-> "LastVote",
+    acc |-> a3,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 2,
+    type |-> "LastVote",
+    acc |-> a4,
+    lastVote |-> [bal |-> -1, dec |-> -1] ] }
+/\ prevVote = ( a1 :> [bal |-> 1, dec |-> d1] @@
+  a2 :> [bal |-> 1, dec |-> d1] @@
+  a3 :> [bal |-> -1, dec |-> -1] @@
+  a4 :> [bal |-> -1, dec |-> -1] @@
+  a5 :> [bal |-> -1, dec |-> -1] @@
+  a6 :> [bal |-> -1, dec |-> -1] )
+/\ nextBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 2 @@ a4 :> 2 @@ a5 :> -1 @@ a6 :> -1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <BeginBallot line 82, col 21 to line 93, col 83 of module MyPaxos>
+/\ acceptorMsg = { [bal |-> 1, type |-> "NextBallot"],
+  [bal |-> 2, type |-> "NextBallot"],
+  [bal |-> 1, dec |-> d1, type |-> "BeginBallot"],
+  [bal |-> 2, dec |-> d2, type |-> "BeginBallot"] }
+/\ remainingBallots = 1
+/\ leaderMsg = { [bal |-> 1, type |-> "Voted", acc |-> a1, vote |-> [bal |-> 1, dec |-> d1]],
+  [bal |-> 1, type |-> "Voted", acc |-> a2, vote |-> [bal |-> 1, dec |-> d1]],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a1,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a2,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 2,
+    type |-> "LastVote",
+    acc |-> a3,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 2,
+    type |-> "LastVote",
+    acc |-> a4,
+    lastVote |-> [bal |-> -1, dec |-> -1] ] }
+/\ prevVote = ( a1 :> [bal |-> 1, dec |-> d1] @@
+  a2 :> [bal |-> 1, dec |-> d1] @@
+  a3 :> [bal |-> -1, dec |-> -1] @@
+  a4 :> [bal |-> -1, dec |-> -1] @@
+  a5 :> [bal |-> -1, dec |-> -1] @@
+  a6 :> [bal |-> -1, dec |-> -1] )
+/\ nextBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 2 @@ a4 :> 2 @@ a5 :> -1 @@ a6 :> -1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <Voted line 95, col 13 to line 100, col 67 of module MyPaxos>
+/\ acceptorMsg = { [bal |-> 1, type |-> "NextBallot"],
+  [bal |-> 2, type |-> "NextBallot"],
+  [bal |-> 1, dec |-> d1, type |-> "BeginBallot"],
+  [bal |-> 2, dec |-> d2, type |-> "BeginBallot"] }
+/\ remainingBallots = 1
+/\ leaderMsg = { [bal |-> 1, type |-> "Voted", acc |-> a1, vote |-> [bal |-> 1, dec |-> d1]],
+  [bal |-> 1, type |-> "Voted", acc |-> a2, vote |-> [bal |-> 1, dec |-> d1]],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a1,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a2,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [bal |-> 2, type |-> "Voted", acc |-> a3, vote |-> [bal |-> 2, dec |-> d2]],
+  [ bal |-> 2,
+    type |-> "LastVote",
+    acc |-> a3,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 2,
+    type |-> "LastVote",
+    acc |-> a4,
+    lastVote |-> [bal |-> -1, dec |-> -1] ] }
+/\ prevVote = ( a1 :> [bal |-> 1, dec |-> d1] @@
+  a2 :> [bal |-> 1, dec |-> d1] @@
+  a3 :> [bal |-> 2, dec |-> d2] @@
+  a4 :> [bal |-> -1, dec |-> -1] @@
+  a5 :> [bal |-> -1, dec |-> -1] @@
+  a6 :> [bal |-> -1, dec |-> -1] )
+/\ nextBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 2 @@ a4 :> 2 @@ a5 :> -1 @@ a6 :> -1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <Voted line 95, col 13 to line 100, col 67 of module MyPaxos>
+/\ acceptorMsg = { [bal |-> 1, type |-> "NextBallot"],
+  [bal |-> 2, type |-> "NextBallot"],
+  [bal |-> 1, dec |-> d1, type |-> "BeginBallot"],
+  [bal |-> 2, dec |-> d2, type |-> "BeginBallot"] }
+/\ remainingBallots = 1
+/\ leaderMsg = { [bal |-> 1, type |-> "Voted", acc |-> a1, vote |-> [bal |-> 1, dec |-> d1]],
+  [bal |-> 1, type |-> "Voted", acc |-> a2, vote |-> [bal |-> 1, dec |-> d1]],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a1,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 1,
+    type |-> "LastVote",
+    acc |-> a2,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [bal |-> 2, type |-> "Voted", acc |-> a3, vote |-> [bal |-> 2, dec |-> d2]],
+  [bal |-> 2, type |-> "Voted", acc |-> a4, vote |-> [bal |-> 2, dec |-> d2]],
+  [ bal |-> 2,
+    type |-> "LastVote",
+    acc |-> a3,
+    lastVote |-> [bal |-> -1, dec |-> -1] ],
+  [ bal |-> 2,
+    type |-> "LastVote",
+    acc |-> a4,
+    lastVote |-> [bal |-> -1, dec |-> -1] ] }
+/\ prevVote = ( a1 :> [bal |-> 1, dec |-> d1] @@
+  a2 :> [bal |-> 1, dec |-> d1] @@
+  a3 :> [bal |-> 2, dec |-> d2] @@
+  a4 :> [bal |-> 2, dec |-> d2] @@
+  a5 :> [bal |-> -1, dec |-> -1] @@
+  a6 :> [bal |-> -1, dec |-> -1] )
+/\ nextBal = (a1 :> 1 @@ a2 :> 1 @@ a3 :> 2 @@ a4 :> 2 @@ a5 :> -1 @@ a6 :> -1)
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2022-05-02 04:36:54
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 28, col 1 to line 28, col 4 of module MyPaxos>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 28, col 9 to line 32, col 31 of module MyPaxos: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<NextBallot line 69, col 1 to line 69, col 13 of module MyPaxos>: 5:183591
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 69, col 18 to line 69, col 71 of module MyPaxos: 183591
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 70, col 18 to line 70, col 77 of module MyPaxos: 183591
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MaxVote line 72, col 1 to line 72, col 10 of module MyPaxos>: 109520:472424
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 20 to line 73, col 40 of module MyPaxos: 2282804
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 73, col 20 to line 73, col 25 of module MyPaxos: 1810380
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 74, col 20 to line 74, col 37 of module MyPaxos: 472424
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 74, col 20 to line 74, col 24 of module MyPaxos: 1085894
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 74, col 28 to line 74, col 37 of module MyPaxos: 1085894
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 75, col 20 to line 75, col 59 of module MyPaxos: 472424
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 76, col 20 to line 76, col 106 of module MyPaxos: 472424
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 72, col 27 to line 72, col 37 of module MyPaxos: 550720
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 77, col 18 to line 77, col 70 of module MyPaxos: 472424
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<BeginBallot line 82, col 1 to line 82, col 14 of module MyPaxos>: 14582:250939
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 82, col 24 to line 83, col 60 of module MyPaxos: 230240
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 82, col 26 to line 83, col 60 of module MyPaxos: 183587
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 82, col 48 to line 83, col 60 of module MyPaxos: 570491
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 82, col 51 to line 82, col 72 of module MyPaxos: 570491
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 83, col 51 to line 83, col 60 of module MyPaxos: 208499
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 82, col 35 to line 82, col 45 of module MyPaxos: 183587
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 35 to line 89, col 68 of module MyPaxos: 2135929
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 89, col 35 to line 89, col 51 of module MyPaxos: 1884990
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 89, col 47 to line 89, col 50 of module MyPaxos: 1884990
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 86, col 41 to line 86, col 68 of module MyPaxos: 1884990
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 38, col 24 to line 40, col 54 of module MyPaxos: 1884990
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 38, col 42 to line 40, col 53 of module MyPaxos: 11861160
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 38, col 45 to line 38, col 54 of module MyPaxos: 11861160
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 39, col 45 to line 39, col 55 of module MyPaxos: 10083930
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 40, col 45 to line 40, col 53 of module MyPaxos: 3361310
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 38, col 31 to line 38, col 39 of module MyPaxos: 1884990
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 86, col 52 to line 86, col 52 of module MyPaxos: 1750592
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 86, col 55 to line 86, col 55 of module MyPaxos: 1884690
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 89, col 55 to line 89, col 68 of module MyPaxos: 1884990
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 90, col 38 to line 90, col 59 of module MyPaxos: 501878
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 90, col 38 to line 90, col 54 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 90, col 38 to line 90, col 50 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 88, col 50 to line 88, col 66 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 41, col 19 to line 43, col 42 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 42, col 21 to line 43, col 42 of module MyPaxos: 285450
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 42, col 24 to line 43, col 42 of module MyPaxos: 285450
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 43, col 25 to line 43, col 42 of module MyPaxos: 331014
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 42, col 34 to line 42, col 35 of module MyPaxos: 285450
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 41, col 32 to line 41, col 33 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 88, col 61 to line 88, col 65 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||line 87, col 42 to line 87, col 65 of module MyPaxos: 262668:901914
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 87, col 43 to line 87, col 52 of module MyPaxos: 525336
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 87, col 61 to line 87, col 64 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 86, col 41 to line 86, col 68 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||||line 38, col 24 to line 40, col 54 of module MyPaxos: 262668:788004
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 38, col 42 to line 40, col 53 of module MyPaxos: 1786756
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 38, col 45 to line 38, col 54 of module MyPaxos: 1786756
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 39, col 45 to line 39, col 55 of module MyPaxos: 1628092
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 40, col 45 to line 40, col 53 of module MyPaxos: 774048
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 38, col 31 to line 38, col 39 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 86, col 52 to line 86, col 52 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 86, col 55 to line 86, col 55 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 90, col 58 to line 90, col 59 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 91, col 38 to line 91, col 60 of module MyPaxos: 274397
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 91, col 38 to line 91, col 54 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 91, col 38 to line 91, col 50 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 88, col 50 to line 88, col 66 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 41, col 19 to line 43, col 42 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 42, col 21 to line 43, col 42 of module MyPaxos: 285450
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 42, col 24 to line 43, col 42 of module MyPaxos: 285450
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 43, col 25 to line 43, col 42 of module MyPaxos: 331014
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 42, col 34 to line 42, col 35 of module MyPaxos: 285450
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 41, col 32 to line 41, col 33 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 88, col 61 to line 88, col 65 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||line 87, col 42 to line 87, col 65 of module MyPaxos: 262668:901914
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 87, col 43 to line 87, col 52 of module MyPaxos: 525336
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 87, col 61 to line 87, col 64 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 86, col 41 to line 86, col 68 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||||line 38, col 24 to line 40, col 54 of module MyPaxos: 262668:788004
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 38, col 42 to line 40, col 53 of module MyPaxos: 1786756
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 38, col 45 to line 38, col 54 of module MyPaxos: 1786756
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 39, col 45 to line 39, col 55 of module MyPaxos: 1628092
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 40, col 45 to line 40, col 53 of module MyPaxos: 774048
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 38, col 31 to line 38, col 39 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 86, col 52 to line 86, col 52 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 86, col 55 to line 86, col 55 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 91, col 58 to line 91, col 60 of module MyPaxos: 262668
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 85, col 37 to line 85, col 42 of module MyPaxos: 125666
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 92, col 28 to line 92, col 92 of module MyPaxos: 250939
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 84, col 35 to line 84, col 41 of module MyPaxos: 62833
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 93, col 24 to line 93, col 83 of module MyPaxos: 250939
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Voted line 95, col 1 to line 95, col 8 of module MyPaxos>: 56335:273811
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 96, col 20 to line 96, col 41 of module MyPaxos: 2084177
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 96, col 20 to line 96, col 25 of module MyPaxos: 1810370
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 20 to line 97, col 37 of module MyPaxos: 998291
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 97, col 20 to line 97, col 24 of module MyPaxos: 724484
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 97, col 28 to line 97, col 37 of module MyPaxos: 724484
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 98, col 20 to line 98, col 86 of module MyPaxos: 273807
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 98, col 32 to line 98, col 86 of module MyPaxos: 273811
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 36, col 20 to line 36, col 50 of module MyPaxos: 273807
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 36, col 33 to line 36, col 50 of module MyPaxos: 273811
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 99, col 33 to line 99, col 117 of module MyPaxos: 273811
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 95, col 25 to line 95, col 35 of module MyPaxos: 550716
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 100, col 16 to line 100, col 67 of module MyPaxos: 273807
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Inv line 115, col 1 to line 115, col 3 of module MyPaxos>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 115, col 8 to line 115, col 41 of module MyPaxos: 180443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 115, col 8 to line 115, col 19 of module MyPaxos: 180443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 115, col 24 to line 115, col 41 of module MyPaxos: 180443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 64, col 23 to line 64, col 78 of module MyPaxos: 180443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 64, col 23 to line 64, col 38 of module MyPaxos: 180443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 57, col 21 to line 62, col 50 of module MyPaxos: 180443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 57, col 24 to line 62, col 50 of module MyPaxos: 180443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||line 58, col 34 to line 58, col 86 of module MyPaxos: 360886:584332
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 58, col 52 to line 58, col 85 of module MyPaxos: 2497728
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 58, col 52 to line 58, col 67 of module MyPaxos: 2497728
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 58, col 72 to line 58, col 85 of module MyPaxos: 469988
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 58, col 41 to line 58, col 49 of module MyPaxos: 360886
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 59, col 25 to line 62, col 50 of module MyPaxos: 360886
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 59, col 28 to line 59, col 36 of module MyPaxos: 360886
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 60, col 28 to line 62, col 50 of module MyPaxos: 176496
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 61, col 27 to line 62, col 50 of module MyPaxos: 262917
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 61, col 30 to line 62, col 50 of module MyPaxos: 262917
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 62, col 30 to line 62, col 50 of module MyPaxos: 321415
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 61, col 41 to line 61, col 44 of module MyPaxos: 262917
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 60, col 39 to line 60, col 45 of module MyPaxos: 176496
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 57, col 33 to line 57, col 41 of module MyPaxos: 180443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 64, col 43 to line 64, col 78 of module MyPaxos: 180443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 64, col 43 to line 64, col 71 of module MyPaxos: 180443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 64, col 55 to line 64, col 70 of module MyPaxos: 180443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 47, col 21 to line 54, col 1 of module MyPaxos: 180443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 47, col 39 to line 53, col 45 of module MyPaxos: 360886
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 48, col 5 to line 53, col 45 of module MyPaxos: 697674
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 48, col 8 to line 53, col 45 of module MyPaxos: 697674
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 49, col 21 to line 49, col 45 of module MyPaxos: 10059980
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||||||||line 38, col 24 to line 40, col 54 of module MyPaxos: 10059980:12077732
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 38, col 42 to line 40, col 53 of module MyPaxos: 69162639
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||||line 38, col 45 to line 38, col 54 of module MyPaxos: 69162639
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||||line 39, col 45 to line 39, col 55 of module MyPaxos: 12388526
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||||line 40, col 45 to line 40, col 53 of module MyPaxos: 4164294
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 38, col 31 to line 38, col 39 of module MyPaxos: 10059980
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 49, col 32 to line 49, col 32 of module MyPaxos: 3787954
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 49, col 35 to line 49, col 35 of module MyPaxos: 8322920
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 51, col 9 to line 53, col 45 of module MyPaxos: 10059980
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 51, col 12 to line 52, col 33 of module MyPaxos: 10059980
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 52, col 13 to line 52, col 33 of module MyPaxos: 2017752
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 51, col 23 to line 51, col 26 of module MyPaxos: 10059980
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 53, col 12 to line 53, col 45 of module MyPaxos: 8953012
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 48, col 17 to line 48, col 22 of module MyPaxos: 697674
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 47, col 48 to line 47, col 56 of module MyPaxos: 360886
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 47, col 30 to line 47, col 36 of module MyPaxos: 180443
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(13) at 2022-05-02 04:36:54: 1,180,705 states generated (4,682,240 s/min), 180,443 distinct states found (715,570 ds/min), 88,655 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+1180705 states generated, 180443 distinct states found, 88655 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 13.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 2 (minimum is 0, the maximum 11 and the 95th percentile is 5).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 15137ms at (2022-05-02 04:36:54)
+@!@!@ENDMSG 2186 @!@!@

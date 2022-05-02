@@ -1,0 +1,491 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 44 and seed 2029632816539469104 with 8 workers on 16 cores with 1214MB heap and 2730MB offheap memory [pid: 67096] (Mac OS X 10.16 x86_64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /Users/suhailmuhammed/Codestash/Examples/specifications/PaxosHowToWinATuringAward/MyPaxos.toolbox/Model_1/MC.tla
+Parsing file /Users/suhailmuhammed/Codestash/Examples/specifications/PaxosHowToWinATuringAward/MyPaxos.toolbox/Model_1/MyPaxos.tla
+Parsing file /private/var/folders/ky/w59jhxtj5h9415_8tb8yygcm0000gn/T/AppTranslocation/E07EBBDA-8734-46CF-9C11-442C6509D159/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/TLC.tla
+Parsing file /private/var/folders/ky/w59jhxtj5h9415_8tb8yygcm0000gn/T/AppTranslocation/E07EBBDA-8734-46CF-9C11-442C6509D159/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Integers.tla
+Parsing file /private/var/folders/ky/w59jhxtj5h9415_8tb8yygcm0000gn/T/AppTranslocation/E07EBBDA-8734-46CF-9C11-442C6509D159/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/FiniteSets.tla
+Parsing file /private/var/folders/ky/w59jhxtj5h9415_8tb8yygcm0000gn/T/AppTranslocation/E07EBBDA-8734-46CF-9C11-442C6509D159/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Naturals.tla
+Parsing file /private/var/folders/ky/w59jhxtj5h9415_8tb8yygcm0000gn/T/AppTranslocation/E07EBBDA-8734-46CF-9C11-442C6509D159/d/TLA+ Toolbox.app/Contents/Eclipse/plugins/org.lamport.tlatools_1.0.0.202012311918/tla2sany/StandardModules/Sequences.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module MyPaxos
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2022-05-02 04:06:31)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2022-05-02 04:06:37.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2193:0 @!@!@
+Model checking completed. No error has been found.
+  Estimates of the probability that TLC did not check all reachable states
+  because two distinct states had the same fingerprint:
+  calculated (optimistic):  val = 1.0E-12
+@!@!@ENDMSG 2193 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2022-05-02 04:06:38
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 27, col 1 to line 27, col 4 of module MyPaxos>: 1:1
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 27, col 9 to line 31, col 31 of module MyPaxos: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<NextBallot line 68, col 1 to line 68, col 13 of module MyPaxos>: 6:3954
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 68, col 18 to line 68, col 71 of module MyPaxos: 3954
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 69, col 18 to line 69, col 77 of module MyPaxos: 3954
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<MaxVote line 71, col 1 to line 71, col 10 of module MyPaxos>: 597:1848
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 72, col 20 to line 72, col 40 of module MyPaxos: 22632
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 72, col 20 to line 72, col 25 of module MyPaxos: 20784
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 20 to line 73, col 37 of module MyPaxos: 1848
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 73, col 20 to line 73, col 24 of module MyPaxos: 11568
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 73, col 28 to line 73, col 37 of module MyPaxos: 11568
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 74, col 20 to line 74, col 59 of module MyPaxos: 1848
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 75, col 20 to line 75, col 106 of module MyPaxos: 1848
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 71, col 27 to line 71, col 37 of module MyPaxos: 5931
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 76, col 18 to line 76, col 70 of module MyPaxos: 1848
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<BeginBallot line 81, col 1 to line 81, col 14 of module MyPaxos>: 228:1020
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 81, col 24 to line 82, col 60 of module MyPaxos: 4346
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 81, col 26 to line 82, col 60 of module MyPaxos: 3954
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 81, col 48 to line 82, col 60 of module MyPaxos: 12680
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 81, col 51 to line 81, col 72 of module MyPaxos: 12680
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 82, col 51 to line 82, col 60 of module MyPaxos: 4968
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 81, col 35 to line 81, col 45 of module MyPaxos: 3954
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 88, col 35 to line 88, col 68 of module MyPaxos: 6312
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 88, col 35 to line 88, col 51 of module MyPaxos: 5292
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 88, col 47 to line 88, col 50 of module MyPaxos: 5292
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 85, col 41 to line 85, col 68 of module MyPaxos: 5292
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 37, col 24 to line 39, col 54 of module MyPaxos: 5292
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 37, col 42 to line 39, col 53 of module MyPaxos: 23904
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 37, col 45 to line 37, col 54 of module MyPaxos: 23904
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 38, col 45 to line 38, col 55 of module MyPaxos: 18720
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 39, col 45 to line 39, col 53 of module MyPaxos: 12480
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 37, col 31 to line 37, col 39 of module MyPaxos: 5292
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 85, col 52 to line 85, col 52 of module MyPaxos: 5184
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 85, col 55 to line 85, col 55 of module MyPaxos: 5244
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 88, col 55 to line 88, col 68 of module MyPaxos: 5292
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 38 to line 89, col 59 of module MyPaxos: 2040
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 89, col 38 to line 89, col 54 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 89, col 38 to line 89, col 50 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 87, col 50 to line 87, col 66 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 40, col 19 to line 42, col 42 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 41, col 21 to line 42, col 42 of module MyPaxos: 1416
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 41, col 24 to line 42, col 42 of module MyPaxos: 1416
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 42, col 25 to line 42, col 42 of module MyPaxos: 1896
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 41, col 34 to line 41, col 35 of module MyPaxos: 1416
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 40, col 32 to line 40, col 33 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 87, col 61 to line 87, col 65 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||line 86, col 42 to line 86, col 65 of module MyPaxos: 1176:4728
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 86, col 43 to line 86, col 52 of module MyPaxos: 2352
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 86, col 61 to line 86, col 64 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 85, col 41 to line 85, col 68 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||||line 37, col 24 to line 39, col 54 of module MyPaxos: 1176:3528
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 37, col 42 to line 39, col 53 of module MyPaxos: 6684
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 37, col 45 to line 37, col 54 of module MyPaxos: 6684
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 38, col 45 to line 38, col 55 of module MyPaxos: 5532
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 39, col 45 to line 39, col 53 of module MyPaxos: 4080
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 37, col 31 to line 37, col 39 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 85, col 52 to line 85, col 52 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 85, col 55 to line 85, col 55 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 89, col 58 to line 89, col 59 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 90, col 38 to line 90, col 60 of module MyPaxos: 1332
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 90, col 38 to line 90, col 54 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 90, col 38 to line 90, col 50 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 87, col 50 to line 87, col 66 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 40, col 19 to line 42, col 42 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 41, col 21 to line 42, col 42 of module MyPaxos: 1416
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 41, col 24 to line 42, col 42 of module MyPaxos: 1416
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 42, col 25 to line 42, col 42 of module MyPaxos: 1896
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 41, col 34 to line 41, col 35 of module MyPaxos: 1416
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 40, col 32 to line 40, col 33 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 87, col 61 to line 87, col 65 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||line 86, col 42 to line 86, col 65 of module MyPaxos: 1176:4728
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 86, col 43 to line 86, col 52 of module MyPaxos: 2352
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 86, col 61 to line 86, col 64 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 85, col 41 to line 85, col 68 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||||line 37, col 24 to line 39, col 54 of module MyPaxos: 1176:3528
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 37, col 42 to line 39, col 53 of module MyPaxos: 6684
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 37, col 45 to line 37, col 54 of module MyPaxos: 6684
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 38, col 45 to line 38, col 55 of module MyPaxos: 5532
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 39, col 45 to line 39, col 53 of module MyPaxos: 4080
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 37, col 31 to line 37, col 39 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 85, col 52 to line 85, col 52 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 85, col 55 to line 85, col 55 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 90, col 58 to line 90, col 60 of module MyPaxos: 1176
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 84, col 37 to line 84, col 42 of module MyPaxos: 1764
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 91, col 28 to line 91, col 92 of module MyPaxos: 1020
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 83, col 35 to line 83, col 41 of module MyPaxos: 882
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 92, col 24 to line 92, col 83 of module MyPaxos: 1020
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Voted line 94, col 1 to line 94, col 8 of module MyPaxos>: 1145:4752
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 95, col 20 to line 95, col 41 of module MyPaxos: 25536
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 95, col 20 to line 95, col 25 of module MyPaxos: 20784
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 96, col 20 to line 96, col 37 of module MyPaxos: 13968
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 96, col 20 to line 96, col 24 of module MyPaxos: 9216
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 96, col 28 to line 96, col 37 of module MyPaxos: 9216
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 20 to line 97, col 86 of module MyPaxos: 4752
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 98, col 20 to line 98, col 118 of module MyPaxos: 4752
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 94, col 25 to line 94, col 35 of module MyPaxos: 5931
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 99, col 16 to line 99, col 67 of module MyPaxos: 4752
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Inv line 114, col 1 to line 114, col 3 of module MyPaxos>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 114, col 8 to line 114, col 41 of module MyPaxos: 1977
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 114, col 8 to line 114, col 19 of module MyPaxos: 1977
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 114, col 24 to line 114, col 41 of module MyPaxos: 1977
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 63, col 23 to line 63, col 78 of module MyPaxos: 1977
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 63, col 23 to line 63, col 38 of module MyPaxos: 1977
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 56, col 21 to line 61, col 50 of module MyPaxos: 1977
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 56, col 24 to line 61, col 50 of module MyPaxos: 1977
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  ||||||line 57, col 34 to line 57, col 86 of module MyPaxos: 3954:8240
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 57, col 52 to line 57, col 85 of module MyPaxos: 24096
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 57, col 52 to line 57, col 67 of module MyPaxos: 24096
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 57, col 72 to line 57, col 85 of module MyPaxos: 6960
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 57, col 41 to line 57, col 49 of module MyPaxos: 3954
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 58, col 25 to line 61, col 50 of module MyPaxos: 3954
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 58, col 28 to line 58, col 36 of module MyPaxos: 3954
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 59, col 28 to line 61, col 50 of module MyPaxos: 2380
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 60, col 27 to line 61, col 50 of module MyPaxos: 3570
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 60, col 30 to line 61, col 50 of module MyPaxos: 3570
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 61, col 30 to line 61, col 50 of module MyPaxos: 4670
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 60, col 41 to line 60, col 44 of module MyPaxos: 3570
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 59, col 39 to line 59, col 45 of module MyPaxos: 2380
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 56, col 33 to line 56, col 41 of module MyPaxos: 1977
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 63, col 43 to line 63, col 78 of module MyPaxos: 1977
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 63, col 43 to line 63, col 71 of module MyPaxos: 1977
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 63, col 55 to line 63, col 70 of module MyPaxos: 1977
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||line 46, col 21 to line 53, col 1 of module MyPaxos: 1977
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 46, col 39 to line 52, col 45 of module MyPaxos: 3954
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 47, col 5 to line 52, col 45 of module MyPaxos: 7502
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||line 47, col 8 to line 52, col 45 of module MyPaxos: 7502
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 48, col 21 to line 48, col 45 of module MyPaxos: 21518
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |||||||||||line 37, col 24 to line 39, col 54 of module MyPaxos: 21518:32280
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 37, col 42 to line 39, col 53 of module MyPaxos: 127794
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||||line 37, col 45 to line 37, col 54 of module MyPaxos: 127794
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||||line 38, col 45 to line 38, col 55 of module MyPaxos: 35274
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||||line 39, col 45 to line 39, col 53 of module MyPaxos: 23754
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 37, col 31 to line 37, col 39 of module MyPaxos: 21518
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 48, col 32 to line 48, col 32 of module MyPaxos: 15458
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 48, col 35 to line 48, col 35 of module MyPaxos: 18050
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 50, col 9 to line 52, col 45 of module MyPaxos: 21518
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 50, col 12 to line 51, col 33 of module MyPaxos: 21518
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 51, col 13 to line 51, col 33 of module MyPaxos: 10762
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||||line 50, col 23 to line 50, col 26 of module MyPaxos: 21518
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||||||line 52, col 12 to line 52, col 45 of module MyPaxos: 15800
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||||line 47, col 17 to line 47, col 22 of module MyPaxos: 7502
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||||||line 46, col 48 to line 46, col 56 of module MyPaxos: 3954
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||||line 46, col 30 to line 46, col 36 of module MyPaxos: 1977
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(17) at 2022-05-02 04:06:38: 11,575 states generated (103,440 s/min), 1,977 distinct states found (17,667 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+11575 states generated, 1977 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 17.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 5 and the 95th percentile is 3).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 6726ms at (2022-05-02 04:06:38)
+@!@!@ENDMSG 2186 @!@!@
