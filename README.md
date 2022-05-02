@@ -3,6 +3,8 @@ A TLA+ specification of the basic Paxos algorithm described in 'The Part-Time Pa
 
 TLA+ is a high-level language used to specify systems and verify their correctness. The language allows specifing assertions on the state of the program and also specifying the next state through those same assertions.
 
+The Paxos spec lies in MyPaxos.tla. It is the only file of importance.
+
 To start off, we first define what composes the state of our program. The Paxos system implemented consists of leaders and Acceptors, where a leader proposes a value and an Acceptor accepts it. The following variables define the state of all Leaders and Acceptors:
 
 ```
